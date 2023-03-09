@@ -9,7 +9,6 @@
     <script src="https://kit.fontawesome.com/18373b5a7f.js" crossorigin="anonymous">
     </script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
 </head>
 <body>
      <!-- Encabezado-->
@@ -20,11 +19,8 @@
         <i class="fa-brands fa-instagram"></i>
         <strong>Instagram</strong>
        </a>
-    
-
       <div class="d-grid gap-4 d-flex justify-content-md-end">
         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
-
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -36,25 +32,21 @@
                 <form>
                   <div class="mb-3">
                     <label for="message-text" class="col-form-label">Caption:</label>
-                    <textarea class="form-control" id="message-text">Add the caption of your post here</textarea>
+                    <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
                   </div>
-                </form>
                 <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
                 <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
-
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Publish</button>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Publish</button>
+                </div>
+              </form>
               </div>
             </div>
           </div>
         </div>
-
         <div class="btn-group" role="group">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-gear"></i>
-          </button>
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open menu"><i class="fa-solid fa-gear"></i></button>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Profile</a></li>
             <li><a class="dropdown-item" href="#">Accesibility</a></li>
@@ -67,19 +59,14 @@
     </div>
   </nav>
 </div>
-
 <!-- Cambio de Grid-->
-
 <nav>
   <div class="nav nav-tabs justify-content-md-center container-md" id="nav-tab" role="tablist">
-    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
-    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-square-full"></i></button>
-    
+    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" aria-label="Table Cells"><i class="fa-solid fa-table-cells"></i></button>
+    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" aria-label="Square Full"><i class="fa-solid fa-square-full"></i></button>
   </div>
 </nav>
-
 <!-- Grid 3/fila-->
-
 <div class="tab-content" id="nav-tabContent">
   <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
     <div class="container text-center">
@@ -91,241 +78,226 @@
           <img src="images/image1.jpg" height="250"  class="w-100" alt="city">
         </div>
         <div class="col-xs-12 col-lg-4 my-2">
-          <img src="images/image2.jpg" height="250" class="w-100" walt="snowman">
-        </div>
-      </div>  
-      <div class="row  mx-3 g-2 gy-2">
-        <div class="col-xs-12 col-lg-4 my-2">
-          <img src="images/image3.jpg" height="250" class="w-100"  walt="lights">
-        </div>
-        <div class="col-xs-12 col-lg-4 my-2">
-          <img src="images/image4.jpg" height="250" class="w-100"  walt="park">
-        </div>
-        <div class="col-xs-12 col-lg-4 my-2">
-          <img src="images/image5.jpg" height="250" class="w-100"  walt="people">
+          <img src="images/image2.jpg" height="250" class="w-100" alt="snowman">
         </div>
       </div>
       <div class="row  mx-3 g-2 gy-2">
         <div class="col-xs-12 col-lg-4 my-2">
-          <img src="images/image6.jpg" height="250"" class="w-100" walt="snow">
+          <img src="images/image3.jpg" height="250" class="w-100"  alt="lights">
         </div>
         <div class="col-xs-12 col-lg-4 my-2">
-          <img src="images/image7.jpg" height="250" class="w-100"  walt="dinner">
+          <img src="images/image4.jpg" height="250" class="w-100"  alt="park">
         </div>
         <div class="col-xs-12 col-lg-4 my-2">
-          <img src="images/image8.jpg" height="250" class="w-100"  walt="chimney">
+          <img src="images/image5.jpg" height="250" class="w-100"  alt="people">
         </div>
       </div>
-    </div> 
+      <div class="row  mx-3 g-2 gy-2">
+        <div class="col-xs-12 col-lg-4 my-2">
+          <img src="images/image6.jpg" height="250" class="w-100" alt="snow">
+        </div>
+        <div class="col-xs-12 col-lg-4 my-2">
+          <img src="images/image7.jpg" height="250" class="w-100"  alt="dinner">
+        </div>
+        <div class="col-xs-12 col-lg-4 my-2">
+          <img src="images/image8.jpg" height="250" class="w-100"  alt="chimney">
+        </div>
+      </div>
+    </div>
   </div>
-
   <!-- Grid 1/fila-->
-
   <div class="tab-pane fade container text-center" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
     <div class="container border rounded w-50 my-5">
       <div class="row d-flex ">
-          <div class="col d-flex justify-content-start align-middle my-2"><h5><strong>My crazy cat!</strong></h5></div>
-          <div class="col d-flex justify-content-end">04/09</div>
-      </div>
-      <div class="row d-flex">  
-          <div class="col d-flex justify-content-center px-0 ">
-            <img src="images/image.jpg"  class="img-fluid" alt="cat">
-          </div>
-      </div>
-      <div class="row d-flex mt-2">
-          <div class="col d-flex justify-content-start">
-          <p><strong>204 Likes</strong></p>
-          </div>
+        <div class="col d-flex justify-content-start align-middle my-2"><h5><strong>My crazy cat!</strong></h5></div>
+        <div class="col d-flex justify-content-end">04/09</div>
       </div>
       <div class="row d-flex">
-          <div class="col d-flex justify-content-star">
-          <p>This is an example of a very good photo that you can post on instagram</p>
-          </div>
-      </div>
-    </div>
-
-    <div class="container border rounded w-50 my-5">
-      <div class="row d-flex ">
-          <div class="col d-flex justify-content-start align-middle my-2"><h5><strong>Christmas</strong></h5></div>
-          <div class="col d-flex justify-content-end">04/09</div>
-      </div>
-      <div class="row d-flex">  
-          <div class="col d-flex justify-content-center px-0 ">
-            <img src="images/image1.jpg"  class="w-100" alt="street">
-          </div>
+        <div class="col d-flex justify-content-center px-0 ">
+          <img src="images/image.jpg"  class="img-fluid" alt="cat">
+        </div>
       </div>
       <div class="row d-flex mt-2">
-          <div class="col d-flex justify-content-start">
+        <div class="col d-flex justify-content-start">
+          <p><strong>204 Likes</strong></p>
+        </div>
+      </div>
+      <div class="row d-flex">
+        <div class="col d-flex justify-content-star">
+          <p>This is an example of a very good photo that you can post on instagram</p>
+        </div>
+      </div>
+    </div>
+    <div class="container border rounded w-50 my-5">
+      <div class="row d-flex ">
+        <div class="col d-flex justify-content-start align-middle my-2"><h5><strong>Christmas</strong></h5></div>
+        <div class="col d-flex justify-content-end">04/09</div>
+      </div>
+      <div class="row d-flex">
+        <div class="col d-flex justify-content-center px-0 ">
+          <img src="images/image1.jpg"  class="w-100" alt="street">
+        </div>
+      </div>
+      <div class="row d-flex mt-2">
+        <div class="col d-flex justify-content-start">
           <p><strong>26985 Likes</strong></p>
-          </div>
+        </div>
       </div>
       <div class="row d-flex mt-0">
-          <div class="col d-flex justify-content-star">
+        <div class="col d-flex justify-content-star">
           <p>This is an example of a very good photo that you can post on instagram</p>
-          </div>
+        </div>
       </div>
     </div>
-
     <div class="container border rounded w-50 my-5">
       <div class="row d-flex ">
-          <div class="col d-flex justify-content-start my-2"><h5><strong>Amazing </strong></h5></div>
-          <div class="col d-flex justify-content-end">06/10</div>
+        <div class="col d-flex justify-content-start my-2"><h5><strong>Amazing </strong></h5></div>
+        <div class="col d-flex justify-content-end">06/10</div>
       </div>
-      <div class="row d-flex">  
-          <div class="col d-flex justify-content-center px-0 ">
-            <img src="images/image2.jpg"  class="w-100" alt="christmas">
-          </div>
+      <div class="row d-flex">
+        <div class="col d-flex justify-content-center px-0 ">
+          <img src="images/image2.jpg"  class="w-100" alt="christmas">
+        </div>
       </div>
       <div class="row d-flex mt-2">
-          <div class="col d-flex justify-content-start">
+        <div class="col d-flex justify-content-start">
           <p><strong>26985 Likes</strong></p>
-          </div>
+        </div>
       </div>
       <div class="row d-flex mt-0">
-          <div class="col d-flex justify-content-star">
+        <div class="col d-flex justify-content-star">
           <p>This is an example of a very good photo that you can post on instagram</p>
-          </div>
+        </div>
       </div>
     </div>
-
     <div class="container border rounded w-50 my-5">
       <div class="row d-flex ">
-          <div class="col d-flex justify-content-start align-middle my-2"><h5><strong>Street light</strong></h5></div>
-          <div class="col d-flex justify-content-end">03/09</div>
+        <div class="col d-flex justify-content-start align-middle my-2"><h5><strong>Street light</strong></h5></div>
+        <div class="col d-flex justify-content-end">03/09</div>
       </div>
-      <div class="row d-flex">  
-          <div class="col d-flex justify-content-center px-0 ">
-            <img src="images/image3.jpg"  class="w-100" alt="luces">
-          </div>
+      <div class="row d-flex">
+        <div class="col d-flex justify-content-center px-0 ">
+          <img src="images/image3.jpg"  class="w-100" alt="luces">
+        </div>
       </div>
       <div class="row d-flex mt-2">
-          <div class="col d-flex justify-content-start">
+        <div class="col d-flex justify-content-start">
           <p><strong>269 Likes</strong></p>
-          </div>
+        </div>
       </div>
       <div class="row d-flex mt-0">
-          <div class="col d-flex justify-content-star">
+        <div class="col d-flex justify-content-star">
           <p>This is an example of a very good photo that you can post on instagram</p>
-          </div>
+        </div>
       </div>
     </div>
-
     <div class="container border rounded w-50 my-5">
       <div class="row d-flex ">
-          <div class="col d-flex justify-content-start align-middle my-2"><h5><strong>Christmas time!!</strong></h5></div>
-          <div class="col d-flex justify-content-end">07/10</div>
+        <div class="col d-flex justify-content-start align-middle my-2"><h5><strong>Christmas time!!</strong></h5></div>
+        <div class="col d-flex justify-content-end">07/10</div>
       </div>
-      <div class="row d-flex">  
-          <div class="col d-flex justify-content-center px-0 ">
-            <img src="images/image4.jpg"  class="w-100" alt="code">
-          </div>
+      <div class="row d-flex">
+        <div class="col d-flex justify-content-center px-0 ">
+          <img src="images/image4.jpg"  class="w-100" alt="code">
+        </div>
       </div>
       <div class="row d-flex mt-2">
-          <div class="col d-flex justify-content-start">
+        <div class="col d-flex justify-content-start">
           <p><strong>205 Likes</strong></p>
-          </div>
+        </div>
       </div>
       <div class="row d-flex mt-0">
-          <div class="col d-flex justify-content-star">
+        <div class="col d-flex justify-content-star">
           <p>This is an example of a very good photo that you can post on instagram</p>
-          </div>
+        </div>
       </div>
     </div>
-
     <div class="container border rounded w-50 my-5">
       <div class="row d-flex ">
-          <div class="col d-flex justify-content-start align-middle my-2"><h5><strong>Happy ⛄</strong></h5></div>
-          <div class="col d-flex justify-content-end">07/10</div>
+        <div class="col d-flex justify-content-start align-middle my-2"><h5><strong>Happy ⛄</strong></h5></div>
+        <div class="col d-flex justify-content-end">07/10</div>
       </div>
-      <div class="row d-flex">  
-          <div class="col d-flex justify-content-center px-0 ">
-            <img src="images/image5.jpg"  class="w-100" alt="gente">
-          </div>
+      <div class="row d-flex">
+        <div class="col d-flex justify-content-center px-0 ">
+          <img src="images/image5.jpg"  class="w-100" alt="gente">
+        </div>
       </div>
       <div class="row d-flex mt-2">
-          <div class="col d-flex justify-content-start">
+        <div class="col d-flex justify-content-start">
           <p><strong>500 Likes</strong></p>
-          </div>
+        </div>
       </div>
       <div class="row d-flex mt-0">
-          <div class="col d-flex justify-content-star">
+        <div class="col d-flex justify-content-star">
           <p>This is an example of a very good photo that you can post on instagram</p>
-          </div>
+        </div>
       </div>
     </div>
-
     <div class="container border rounded w-50 my-5">
       <div class="row d-flex ">
-          <div class="col d-flex justify-content-start align-middle my-2"><h5><strong>Snoow!!</strong></h5></div>
-          <div class="col d-flex justify-content-end">01/10</div>
+        <div class="col d-flex justify-content-start align-middle my-2"><h5><strong>Snoow!!</strong></h5></div>
+        <div class="col d-flex justify-content-end">01/10</div>
       </div>
-      <div class="row d-flex">  
-          <div class="col d-flex justify-content-center px-0 ">
-            <img src="images/image6.jpg"  class="w-100" alt="nieve">
-          </div>
+      <div class="row d-flex">
+        <div class="col d-flex justify-content-center px-0 ">
+          <img src="images/image6.jpg"  class="w-100" alt="nieve">
+        </div>
       </div>
       <div class="row d-flex mt-2">
-          <div class="col d-flex justify-content-start">
+        <div class="col d-flex justify-content-start">
           <p><strong>1235 Likes</strong></p>
-          </div>
+        </div>
       </div>
       <div class="row d-flex mt-0">
-          <div class="col d-flex justify-content-star">
+        <div class="col d-flex justify-content-star">
           <p>This is an example of a very good photo that you can post on instagram</p>
-          </div>
+        </div>
       </div>
     </div>
-
     <div class="container border rounded w-50 my-5">
       <div class="row d-flex ">
-          <div class="col d-flex justify-content-start align-middle my-2"><h5><strong>Dinner...</strong></h5></div>
-          <div class="col d-flex justify-content-end">02/09</div>
+        <div class="col d-flex justify-content-start align-middle my-2"><h5><strong>Dinner...</strong></h5></div>
+        <div class="col d-flex justify-content-end">02/09</div>
       </div>
-      <div class="row d-flex">  
-          <div class="col d-flex justify-content-center px-0 ">
-            <img src="images/image7.jpg"  class="w-100" alt="cena">
-          </div>
+      <div class="row d-flex">
+        <div class="col d-flex justify-content-center px-0 ">
+          <img src="images/image7.jpg"  class="w-100" alt="cena">
+        </div>
       </div>
       <div class="row d-flex mt-2">
-          <div class="col d-flex justify-content-start">
+        <div class="col d-flex justify-content-start">
           <p><strong>336 Likes</strong></p>
-          </div>
+        </div>
       </div>
       <div class="row d-flex mt-0">
-          <div class="col d-flex justify-content-star">
+        <div class="col d-flex justify-content-star">
           <p>This is an example of a very good photo that you can post on instagram</p>
-          </div>
+        </div>
       </div>
     </div>
-
     <div class="container border rounded w-50 my-5">
       <div class="row d-flex ">
-          <div class="col d-flex justify-content-start align-middle my-2"><h5><strong>If we take a picture?</strong></h5></div>
-          <div class="col d-flex justify-content-end">09/09</div>
+        <div class="col d-flex justify-content-start align-middle my-2"><h5><strong>If we take a picture?</strong></h5></div>
+        <div class="col d-flex justify-content-end">09/09</div>
       </div>
-      <div class="row d-flex">  
-          <div class="col d-flex justify-content-center px-0 ">
-            <img src="images/image8.jpg"  class="w-100" alt="fuego">
-          </div>
+      <div class="row d-flex">
+        <div class="col d-flex justify-content-center px-0 ">
+          <img src="images/image8.jpg"  class="w-100" alt="fuego">
+        </div>
       </div>
       <div class="row d-flex mt-2">
-          <div class="col d-flex justify-content-start">
+        <div class="col d-flex justify-content-start">
           <p><strong>404 Likes</strong></p>
-          </div>
+        </div>
       </div>
       <div class="row d-flex mt-0">
-          <div class="col d-flex justify-content-star">
+        <div class="col d-flex justify-content-star">
           <p>This is an example of a very good photo that you can post on instagram</p>
-          </div>
+        </div>
       </div>
     </div>
-
-  </div>
-
-
   </div>
 </div>
-
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
